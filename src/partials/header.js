@@ -13,6 +13,17 @@ import Contact from '../pages/contact/index';
 
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            activeTab: 1
+        };
+    }
+
+    handleClickActiveTab(currentTab) {
+        this.setState({ activeTab: currentTab });
+    }
+
     render() {
         return (
             <div>
@@ -24,20 +35,39 @@ class Header extends Component {
 
                         {/* Tabs */}
                         <ul className='nav__tabs'>
-                            <li className='nav__tab'>
-                                <Link className='nav__link' to={'/'}>Home</Link>
+                            {/* Home */}
+                            <li className={this.state.activeTab === 1 ? 'nav__tab nav__tab--active' : 'nav__tab'}>
+                                <Link className='nav__link' to={'/'} 
+                                      onClick={this.handleClickActiveTab.bind(this, 1)}
+                                >Home</Link>
                             </li>
-                            <li className='nav__tab'>
-                                <Link className='nav__link' to={'/about'}>About</Link>
+
+                            {/* About */}
+                            <li className={this.state.activeTab === 2 ? 'nav__tab nav__tab--active' : 'nav__tab'}>
+                                <Link className='nav__link' to={'/about'} 
+                                      onClick={this.handleClickActiveTab.bind(this, 2)}
+                                >About</Link>
                             </li>
-                            <li className='nav__tab'>
-                                <Link className='nav__link' to={'/projects'}>Projects</Link>
+                            
+                            {/* Projects */}
+                            <li className={this.state.activeTab === 3 ? 'nav__tab nav__tab--active' : 'nav__tab'}>
+                                <Link className='nav__link' to={'/projects'} 
+                                      onClick={this.handleClickActiveTab.bind(this, 3)}
+                                >Projects</Link>
                             </li>
-                            <li className='nav__tab'>
-                                <Link className='nav__link' to={'/blog'}>Blog</Link>
+
+                            {/* Blog */}
+                            <li className={this.state.activeTab === 4 ? 'nav__tab nav__tab--active' : 'nav__tab'}>
+                                <Link className='nav__link' to={'/blog'} 
+                                      onClick={this.handleClickActiveTab.bind(this, 4)}
+                                >Blog</Link>
                             </li>
-                            <li className='nav__tab nav__tab--highlight nav__tab--last'>
-                                <Link className='nav__link nav__link--highlight' to={'/contact'}>Contact</Link>
+                            
+                            {/* Contact */}
+                            <li className={this.state.activeTab === 5 ? 'nav__tab nav__tab--last nav__tab--active' : 'nav__tab nav__tab--last'}>
+                                <Link className='nav__link nav__link--highlight' to={'/contact'} 
+                                      onClick={this.handleClickActiveTab.bind(this, 5)}
+                                >Contact</Link>
                             </li>
                         </ul>
                     </nav>
