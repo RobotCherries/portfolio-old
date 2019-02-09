@@ -7,20 +7,41 @@ $white: #fff;
 // Colors tagged
 $primary: #282c34;
 $primaryDark: #212327;
-$secondary: #61dafb;
+$secondary: #00aeff;
+
+$secondaryText: #61dafb;
 
 // Others
+
+// Media query utils
+$mobile: 768px;
+$tablet: 992px;
+$smDesktop: 1200px;
+$mdDesktop: 1400px;
 /*-----------------------------------------------------*/
 
 
 /*-----------------------------------------------------*/
-/* ----- App
+/* ----- General
 /*-----------------------------------------------------*/
-.app {
-  text-align: center;
-}  
+.app { text-align:center; }  
+a { text-decoration:none; color:$secondaryText; }
 
-a { text-decoration: none; color: $secondary; }
+// Container
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  
+  @media screen and (min-width:$mobile) {
+    max-width:750px;
+  }
+  @media screen and (min-width:$tablet) {
+    max-width:970px;
+  }
+  @media screen and (min-width:$smDesktop) {
+    max-width:1170px;
+  }
+}
 /*-----------------------------------------------------*/
 
 
@@ -28,11 +49,12 @@ a { text-decoration: none; color: $secondary; }
 /* ----- Header
 /*-----------------------------------------------------*/
 .header {
-  background-color: $primary;
+  background-color: $white;
   
   &__content {
-    min-height: calc(60vh - 60px);
-    background: url('https://i.imgur.com/ElRzUkc.png') no-repeat fixed center center;
+    min-height: calc(100vh - 100px);
+    background: url('https://i.imgur.com/ElRzUkc.png') fixed;
+    background-position: center;
     
     display: flex;
     flex-direction: column;
@@ -40,7 +62,7 @@ a { text-decoration: none; color: $secondary; }
     justify-content: center;
     
     font-size: calc(10px + 2vmin);
-    color: white;
+    // color: white;
   }
 }
 
@@ -60,9 +82,9 @@ a { text-decoration: none; color: $secondary; }
 /* ----- Navbar
 /*-----------------------------------------------------*/
 .nav {
-  background-color: $primary;
-  height: 60px;
-  box-shadow: 0px 5px 20px $primaryDark;
+  background-color: $white;
+  height: 100px;
+  box-shadow: 0px 5px 20px #fefefe;
   
   display: flex;
   flex-direction:row;
@@ -88,6 +110,41 @@ a { text-decoration: none; color: $secondary; }
   
   &__link {
     padding:20px;
+  }
+}
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Skills section
+/*-----------------------------------------------------*/
+.skills {
+  background-color: $secondary;
+  padding: 65px 0;
+  
+  .container {
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);    
+  }
+  
+  &-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding:30px 15px;
+    
+    &__image {
+      background-color:$white;
+      height:60px;
+      width:60px;
+      margin-left: 30px;
+      border-radius:100%;
+    }
+    
+    &__copy {
+      padding-left:15px;
+      flex-grow: 1;
+    }
   }
 }
 /*-----------------------------------------------------*/

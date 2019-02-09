@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Skills from './components/skills';
 
 class Home extends Component {
     render() {
         return (
             <div>
-                <h1>Home</h1>
+                <Skills />
             </div>
         );
     }

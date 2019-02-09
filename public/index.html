@@ -38,24 +38,16 @@
         To create a production bundle, use `npm run build` or `yarn build`.
       -->
 
+      <!-- Scripts -->
       <script
       src='https://code.jquery.com/jquery-3.3.1.min.js'
       integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
       crossorigin='anonymous'></script>
 
       <script>
-        window.onload = function() {
-          let movementStrength = 50;
-          let height = movementStrength / $(window).height();
-          let width = movementStrength / $(window).width();
-          $('.header__content').mousemove(function(e){
-            let pageX = e.pageX - ($(window).width() / 2);
-            let pageY = e.pageY - ($(window).height() / 2);
-            let newvalueX = width * pageX + 25;
-            let newvalueY = height * pageY + 25;
-            $('.header__content').css('background-position', `${newvalueX}px ${newvalueY}px`);
-          });
-        }
+		$(function blobs(){
+		  $('.header__content').animate({ 'background-position-y': '+=50%' }, 10000, 'linear', blobs);
+		});
       </script>
     </body>
     </html>
