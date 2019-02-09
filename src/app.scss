@@ -55,6 +55,7 @@ a { text-decoration:none; color:$secondaryText; }
     min-height: calc(100vh - 100px);
     background: url('https://i.imgur.com/ElRzUkc.png') fixed;
     background-position: center;
+    animation: app-blobs-float 1500s infinite linear;
     
     display: flex;
     flex-direction: column;
@@ -67,13 +68,8 @@ a { text-decoration:none; color:$secondaryText; }
 }
 
 // Animations
-@keyframes app-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes app-blobs-float {
+  100% { background-position: 0 10000%; }
 }
 /*-----------------------------------------------------*/
 
@@ -111,6 +107,11 @@ a { text-decoration:none; color:$secondaryText; }
   &__link {
     padding:20px;
   }
+}
+// Animations
+@keyframes app-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 /*-----------------------------------------------------*/
 
