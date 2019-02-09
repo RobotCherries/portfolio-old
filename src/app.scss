@@ -148,3 +148,18 @@ a { text-decoration:none; color:$secondaryText; }
   }
 }
 /*-----------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------*/
+/* ----- Scrollbar
+/*-----------------------------------------------------*/
+/* Width */
+::-webkit-scrollbar { width: 16px; }
+/* Handle */
+::-webkit-scrollbar-thumb { background: #aaa;  }
+/* Track */
+::-webkit-scrollbar-track { background: #f0f0f0;  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: #888;  }
+/*-----------------------------------------------------*/
