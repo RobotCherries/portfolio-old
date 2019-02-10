@@ -4,7 +4,7 @@ class Skills extends Component {
     render() {
         return (
         <div className='skills'>
-            <div className="container">
+            <div className='container'>
             
                 {/* Card 1 out of 6 */}
                 <div className='skills-card'>

@@ -2,20 +2,10 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
 // Resources
-import logo from '../logo.svg';
+import logo from '../icons/logo.svg';
+import NavLink from "./nav_link";
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            activeTab: 1
-        };
-    }
-
-    handleClickActiveTab(currentTab) {
-        this.setState({ activeTab: currentTab });
-    }
-
     render() {
         return (
             <header className='header'>
@@ -27,38 +17,28 @@ class Header extends Component {
                     {/* Tabs */}
                     <ul className='nav__tabs'>
                         {/* Home */}
-                        <li className={this.state.activeTab === 1 ? 'nav__tab nav__tab--active' : 'nav__tab'}>
-                            <Link className='nav__link' to={'/'} 
-                                    onClick={this.handleClickActiveTab.bind(this, 1)}
-                            >Home</Link>
+                        <li className='nav__tab'>
+                            <NavLink to="/">Home</NavLink>
                         </li>
 
                         {/* About */}
-                        <li className={this.state.activeTab === 2 ? 'nav__tab nav__tab--active' : 'nav__tab'}>
-                            <Link className='nav__link' to={'/about'} 
-                                    onClick={this.handleClickActiveTab.bind(this, 2)}
-                            >About</Link>
+                        <li className='nav__tab'>
+                            <NavLink to="/about">About</NavLink>
                         </li>
                         
                         {/* Projects */}
-                        <li className={this.state.activeTab === 3 ? 'nav__tab nav__tab--active' : 'nav__tab'}>
-                            <Link className='nav__link' to={'/projects'} 
-                                    onClick={this.handleClickActiveTab.bind(this, 3)}
-                            >Projects</Link>
+                        <li className='nav__tab'>
+                            <NavLink to="/projects">Projects</NavLink>
                         </li>
 
                         {/* Blog */}
-                        <li className={this.state.activeTab === 4 ? 'nav__tab nav__tab--active' : 'nav__tab'}>
-                            <Link className='nav__link' to={'/blog'} 
-                                    onClick={this.handleClickActiveTab.bind(this, 4)}
-                            >Blog</Link>
+                        <li className='nav__tab'>
+                            <NavLink to="/blog">Blog</NavLink>
                         </li>
                         
                         {/* Contact */}
-                        <li className={this.state.activeTab === 5 ? 'nav__tab nav__tab--last nav__tab--active' : 'nav__tab nav__tab--last'}>
-                            <Link className='nav__link nav__link--highlight' to={'/contact'} 
-                                    onClick={this.handleClickActiveTab.bind(this, 5)}
-                            >Contact</Link>
+                        <li className='nav__tab nav__tab nav__tab--last btn'>
+                            <NavLink to='/contact'>Contact</NavLink>
                         </li>
                     </ul>
                 </nav>

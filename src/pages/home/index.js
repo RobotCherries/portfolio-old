@@ -3,6 +3,7 @@ import Hero from './components/hero';
 import Skills from './components/skills';
 import Quote from './components/quote';
 import Work from './components/work';
+import Gallery from './components/gallery';
 
 class Home extends Component {
     render() {
@@ -12,6 +13,7 @@ class Home extends Component {
                 <Skills/>
                 <Quote/>
                 <Work/>
+                <Gallery/>
             </div>
         );
     }

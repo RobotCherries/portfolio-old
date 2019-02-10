@@ -25,7 +25,7 @@
   &__title {
     // Text
     color: #645ab5;
-    font-family: 'Meslo', sans-serif;
+    font-family: $fontMeslo;
     font-size: 35px;
     font-weight: bold;
 
@@ -50,6 +50,7 @@
   &__btn {
     font-size: 35px;
     font-weight: 400;
+    color: $secondaryLink;
   }
 }
 
@@ -75,7 +76,7 @@
   
   .container {
     display: grid;
-    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    grid-template-columns: repeat(3, 1fr);
   }
   
   &-card {
@@ -125,7 +126,7 @@
     // Text
     color: $primaryText;
     font-size: 18px;
-    font-family: 'Meslo', sans-serif;
+    font-family: $fontMeslo;
     line-height: 30px;
     text-align: center;
     position: relative;
@@ -157,7 +158,7 @@
   }
   
   &__symbol {
-    font-family: 'Meslo', sans-serif;
+    font-family: $fontMeslo;
     font-size: 24px;
     text-align: left;
 
@@ -169,7 +170,7 @@
   
   &__footer {
     position: relative;
-    font-family: 'Meslo', sans-serif;
+    font-family: $fontMeslo;
   }
 }
 /*-----------------------------------------------------*/
@@ -189,7 +190,7 @@
   
   &__heading {
     color: $white;
-    font-family: "Inconsolata", Arial, sans-serif;
+    font-family: $fontInconsolata;
     font-weight: 400;
     text-align: left;
     margin-right: 60px;
@@ -204,6 +205,31 @@
   &__subtitle {
     font-size: 18px;
     line-height: 28px;
+  }
+}
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Gallery component
+/*-----------------------------------------------------*/
+.gallery {
+  padding: 125px 0;
+  
+  &__list {
+    padding: 40px 20px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+  }
+  
+  &__li {
+    width:100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 }
 /*-----------------------------------------------------*/
