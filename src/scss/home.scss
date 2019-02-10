@@ -1,0 +1,294 @@
+@import 'variables';
+
+
+
+/*-----------------------------------------------------*/
+/* ----- Hero
+/*-----------------------------------------------------*/
+.hero {
+  
+  // Size
+  background: url('https://i.imgur.com/ElRzUkc.png') fixed;
+  background-color: $white;
+  background-position: center;
+  min-height: calc(100vh - 100px);
+
+  // Positioning
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  // Animations
+  animation: app-blobs-float 300s infinite linear;
+  
+  &__title {
+    // Text
+    color: #645ab5;
+    font-family: 'Meslo', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+
+    // Look
+    padding: 2px 0 2px 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-bottom: 30px;
+    background-color: #f8f2f4;
+
+    // Animation prep
+    width: 49ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;  
+    // box-shadow: 0 1px 5px #d7ccc8;
+
+    // Animation
+    animation: typing-effect 4s steps(51), blink-effect 1.2s infinite alternate;
+  }
+  
+  &__btn {
+    font-size: 35px;
+    font-weight: 400;
+  }
+}
+
+// Animations
+@keyframes app-blobs-float {
+  100% { background-position: 0 1000%; }
+}
+@keyframes typing-effect {
+  from { width: 0; }
+}
+@keyframes blink-effect {
+  50% { border-color: transparent; }
+}
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Skills component
+/*-----------------------------------------------------*/
+.skills {
+  background-color: $secondary;
+  padding: 55px 0 60px 0;
+  
+  .container {
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+  }
+  
+  &-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding:40px 15px;
+    
+    &__image {
+      background-color:$white;
+      height:60px;
+      width:60px;
+      margin-left: 30px;
+      border-radius:100%;
+    }
+    
+    &__copy {
+      padding-left:20px;
+      flex-grow: 1;
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Quote component
+/*-----------------------------------------------------*/
+.quote {
+  padding: 120px 0;
+
+  &__content {
+    // Layout
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    align-items: baseline;
+    margin-bottom: 25px;
+    // Text
+    color: #888;
+    font-size: 18px;
+    font-family: 'Meslo', sans-serif;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  &__symbol {
+    color: #444;
+    font-family: 'Meslo', sans-serif;
+    font-size: 30px;
+    text-align: left;
+
+    &:first-of-type {
+      text-align: right;
+      margin-right: 10px;
+    }
+  }
+  
+  &__footer {
+    position: relative;
+    font-family: 'Meslo', sans-serif;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background: #3369e7;
+      margin: 0 auto;
+    }
+  }  
+}
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Work component
+/*-----------------------------------------------------*/
+.work {
+  padding: 120px 0;
+  background-color: #133ea1;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 60% 40%;    
+  }
+  
+  &__heading {
+    color: white;
+    font-family: "Inconsolata", Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-right: 60px;
+  }
+  
+  &__title {
+    color: inherit;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  &__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+}
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Slider block
+/*-----------------------------------------------------*/
+.slider {
+  width: 100%;
+  max-width: 555px;
+  height: 600px;
+
+  // Controls
+  &__controls {
+    position: relative;
+    top: -30px;
+    float: right;
+
+    &-li {
+      display: inline-block;
+      margin: 0 5px;
+
+    }
+    &-btn {
+      // Block
+      display: inherit;      
+      height: 12px;
+      width: 12px;
+      background: #5a78bd;
+      // Other
+      cursor: pointer;
+      border: 0 solid black;
+      border-radius: 20px;
+      outline: none;
+      
+      &--active {
+        background: transparent !important;
+        border: 1px solid #fff;
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+  
+  // Slides
+  &__slides {
+    width: inherit;
+    height: inherit;
+    box-shadow: 0px 60px 90px -60px rgba(0, 0, 0, 0.3);
+  
+    &-li {
+      width: 100%;
+      height: 100%;
+      float: left;
+      margin-right: -100%;
+      position: relative;
+      display: block;
+      z-index: 1;
+      border-radius: 5px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+      transition: all 1.5s ease-in-out;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-info {
+      text-align: left;
+      background-color: #00aeff;
+      position: relative;
+      right: 80%;
+      border-radius: 10px;
+      padding: 40px 35px;
+      height: 200px;
+      width: 500px;
+      box-shadow: -25px 30px 60px -15px rgba(0, 0, 0, 0.15);
+      transition: transform 1.5s ease-in, opacity 0.5s ease-in-out;
+      transition-delay: transform 0.5s;
+    }
+
+    &-title {
+      color: #000;
+      font-family: "Inconsolata", Arial, sans-serif;
+      font-weight: 400;
+      margin: 0 0 20px 0;
+      font-size: 30px;
+    }
+
+    &-text {
+      overflow: hidden;
+      line-height: 24px;
+    }
+  }
+}
+/*-----------------------------------------------------*/

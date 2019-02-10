@@ -1,0 +1,34 @@
+/*-----------------------------------------------------*/
+/* ----- Fonts
+/*-----------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin-ext');
+@font-face { font-family: 'Meslo'; src: url('../fonts/MesloLGM-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Meslo'; src: url('../fonts/MesloLGM-Bold.ttf') format('truetype'); }
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Variables
+/*-----------------------------------------------------*/
+// Colors
+$white: #fff;
+
+// Colors tagged
+$primary: #3369e7;
+$primaryDark: #133ea1;
+
+$secondary: #00aeff;
+
+$primaryText: #4c4c4c;
+$secondaryText: #888;
+
+$primaryLink: #61dafb;
+
+// Others
+
+// Media query utils
+$mobile: 768px;
+$tablet: 992px;
+$smDesktop: 1200px;
+$mdDesktop: 1400px;
+/*-----------------------------------------------------*/
