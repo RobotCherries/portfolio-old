@@ -114,26 +114,51 @@
 /* ----- Quote component
 /*-----------------------------------------------------*/
 .quote {
-  padding: 120px 0;
+  padding: 300px 0;
 
   &__content {
     // Layout
     display: grid;
     grid-template-columns: auto 70% auto;
     align-items: baseline;
-    margin-bottom: 25px;
+    margin-bottom: 7px;
     // Text
-    color: #888;
+    color: $primaryText;
     font-size: 18px;
     font-family: 'Meslo', sans-serif;
     line-height: 30px;
     text-align: center;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 100px;
+      width: 243px;
+      height: 4px;
+      background: rgba(51, 105, 231, 0.8);
+      margin: 0 auto;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 130px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 243px;
+      height: 4px;
+      background: rgba(51, 105, 231, 0.8);
+      margin: 0 auto;
+    }
   }
   
   &__symbol {
-    color: #444;
     font-family: 'Meslo', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     text-align: left;
 
     &:first-of-type {
@@ -145,20 +170,7 @@
   &__footer {
     position: relative;
     font-family: 'Meslo', sans-serif;
-    
-    &:after {
-      content: '';
-      position: absolute;
-      top: 50px;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 80px;
-      height: 3px;
-      background: #3369e7;
-      margin: 0 auto;
-    }
-  }  
+  }
 }
 /*-----------------------------------------------------*/
 
@@ -168,7 +180,7 @@
 /*-----------------------------------------------------*/
 .work {
   padding: 120px 0;
-  background-color: #133ea1;
+  background-color: $primaryDark;
 
   &__container {
     display: grid;
@@ -176,7 +188,7 @@
   }
   
   &__heading {
-    color: white;
+    color: $white;
     font-family: "Inconsolata", Arial, sans-serif;
     font-weight: 400;
     text-align: left;
@@ -192,103 +204,6 @@
   &__subtitle {
     font-size: 18px;
     line-height: 28px;
-  }
-
-}
-/*-----------------------------------------------------*/
-
-
-/*-----------------------------------------------------*/
-/* ----- Slider block
-/*-----------------------------------------------------*/
-.slider {
-  width: 100%;
-  max-width: 555px;
-  height: 600px;
-
-  // Controls
-  &__controls {
-    position: relative;
-    top: -30px;
-    float: right;
-
-    &-li {
-      display: inline-block;
-      margin: 0 5px;
-
-    }
-    &-btn {
-      // Block
-      display: inherit;      
-      height: 12px;
-      width: 12px;
-      background: #5a78bd;
-      // Other
-      cursor: pointer;
-      border: 0 solid black;
-      border-radius: 20px;
-      outline: none;
-      
-      &--active {
-        background: transparent !important;
-        border: 1px solid #fff;
-        position: relative;
-        top: -1px;
-      }
-    }
-  }
-  
-  // Slides
-  &__slides {
-    width: inherit;
-    height: inherit;
-    box-shadow: 0px 60px 90px -60px rgba(0, 0, 0, 0.3);
-  
-    &-li {
-      width: 100%;
-      height: 100%;
-      float: left;
-      margin-right: -100%;
-      position: relative;
-      display: block;
-      z-index: 1;
-      border-radius: 5px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top center;
-      transition: all 1.5s ease-in-out;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &-info {
-      text-align: left;
-      background-color: #00aeff;
-      position: relative;
-      right: 80%;
-      border-radius: 10px;
-      padding: 40px 35px;
-      height: 200px;
-      width: 500px;
-      box-shadow: -25px 30px 60px -15px rgba(0, 0, 0, 0.15);
-      transition: transform 1.5s ease-in, opacity 0.5s ease-in-out;
-      transition-delay: transform 0.5s;
-    }
-
-    &-title {
-      color: #000;
-      font-family: "Inconsolata", Arial, sans-serif;
-      font-weight: 400;
-      margin: 0 0 20px 0;
-      font-size: 30px;
-    }
-
-    &-text {
-      overflow: hidden;
-      line-height: 24px;
-    }
   }
 }
 /*-----------------------------------------------------*/
