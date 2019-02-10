@@ -15,15 +15,15 @@ class Work extends Component {
     render() {
         return (
             <div className='work'>
-                <div class="work__container container">
+                <div className="work__container container">
                     {/* Heading */}
-                    <div class="work__heading">
+                    <div className="work__heading">
                         <h1 className='work__title'>Check out what I Built:</h1>
                         <p className='work__subtitle'>Here you can see some websites that I've built myself or helped build for our clients.</p>
                     </div>
                     
                     {/* Slider */}
-                    <div class="work__slider">
+                    <div className="work__slider">
                         <div className='slider'>
                             {/* Control buttons */}
                             <ol className="slider__controls">

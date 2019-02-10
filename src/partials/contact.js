@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 class Contact extends Component {
     render() {
         return (
-            <div class="contact">
-                <div class="container">
+            <div className="contact">
+                <div className="container">
                     <div className='heading heading--light'>
                         <h2 className='heading__title'>Let's Get In Touch!</h2>
                         <p className='heading__text'>Thinking I'd be a good fit to work on your idea or team? <br/> Then, click below and drop me a message.</p>
