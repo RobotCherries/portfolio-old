@@ -19,7 +19,7 @@ class Skills extends Component {
                     <div className='skills-card__image'></div>
                     <div className='skills-card__copy'>
                         <h3>CSS</h3>
-                        <p>CSS3, SCSS, Keyframes, Bootstrap.</p>
+                        <p>CSS3, SCSS, Bootstrap.</p>
                     </div>
                 </div>
                 {/* Card 3 out of 6 */}
@@ -43,7 +43,7 @@ class Skills extends Component {
                     <div className='skills-card__image'></div>
                     <div className='skills-card__copy'>
                         <h3>Web, graphic design</h3>
-                        <p>AI, AP, Lightroom, Paint Tool Sai.</p>
+                        <p>Illustrator, Photoshop, Sai.</p>
                     </div>
                 </div>
                 {/* Card 6 out of 6 */}

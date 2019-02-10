@@ -3,6 +3,7 @@
 /*-----------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin-ext');
 @font-face { font-family: 'Meslo'; src: url('./fonts/MesloLGM-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Meslo'; src: url('./fonts/MesloLGM-Bold.ttf') format('truetype'); }
 /*-----------------------------------------------------*/
 
 
@@ -39,7 +40,7 @@ $mdDesktop: 1400px;
 * { margin:0; padding:0; font-family: 'Inconsolata', monospace, sans-serif; font-weight:400; }
 *, *::after, *::before { box-sizing:border-box; }
 body { color:#3e454c; background-color:#fefefe; }
-h1, h2, h3, h4, h5, pre { font-family: 'Meslo', sans-serif; font-weight:400; }
+h1, h2, h3, h4, h5, pre { font-family: 'Inconsolata', sans-serif; color:#000; }
 h1 { font-size:20px; }
 h1 span { font-weight:300; }
 b, strong { font-weight:600; }
@@ -253,7 +254,7 @@ DIALOG p { margin:0 0 30px; color:#676767; font-weight:300; }
   
   .container {
     display: grid;
-    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);    
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
   }
   
   &-card {
@@ -271,9 +272,68 @@ DIALOG p { margin:0 0 30px; color:#676767; font-weight:300; }
     }
     
     &__copy {
-      padding-left:15px;
+      padding-left:20px;
       flex-grow: 1;
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 15px;
+      }
     }
   }
+}
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Quote section
+/*-----------------------------------------------------*/
+.quote {
+  background-color: $white;
+  padding: 150px 0;
+
+  &__header {
+    text-align: left;
+    position: relative;
+  }
+  
+  &__content {
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    align-items: baseline;
+    line-height: 30px;
+    font-size: 20px;
+    color: #777;
+    font-family: 'Meslo', sans-serif;
+    margin-bottom: 25px;
+  }
+  
+  &__symbol {
+    color: #444;
+    font-family: 'Meslo', sans-serif;
+    font-size: 35px;
+  }
+  
+  &__footer {
+    position: relative;
+    font-family: 'Meslo', sans-serif;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background: #3369e7;
+      margin: 0 auto;
+    }
+  }  
 }
 /*-----------------------------------------------------*/
