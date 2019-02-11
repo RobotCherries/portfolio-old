@@ -12,19 +12,19 @@ class Gallery extends Component {
                     </div>
 
                     <ul className='gallery__list'>
-                        <Link to={'/projects'}>
+                        <Link to={'/design'}>
                             <li className='gallery__li' style={{ backgroundImage: 'url(https://i.imgur.com/GHB0R8y.png)' }}></li>
                         </Link>
-                        <Link to={'/projects'}>
+                        <Link to={'/design'}>
                             <li className='gallery__li' style={{ backgroundImage: 'url(https://i.imgur.com/qrg9mmV.png)' }}></li>
                         </Link>
-                        <Link to={'/projects'}>
+                        <Link to={'/design'}>
                             <li className='gallery__li' style={{ backgroundImage: 'url(https://i.imgur.com/R4LYZlZ.png)' }}></li>
                         </Link>
                     </ul>
 
                     <div className="gallery__footer">
-                        <Link className='btn btn-link btn-icon btn-icon--arrow-right' to={'/projects'}>See more</Link>
+                        <Link className='btn btn-link btn-icon btn-icon--arrow-right' to={'/design'}>See more</Link>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ class Header extends Component {
         return (
             <header className='header'>
                 {/* Navigation */}
-                <nav className='nav'>
+                <nav className='nav container'>
                     {/* Logo */}
                     <img className='nav__logo' src={logo} alt='logo' />
 
@@ -19,15 +19,20 @@ class Header extends Component {
                         <li className='nav__tab'>
                             <NavLink to="/">Home</NavLink>
                         </li>
-
+                        
                         {/* About */}
                         <li className='nav__tab'>
                             <NavLink to="/about">About</NavLink>
                         </li>
-                        
-                        {/* Projects */}
+
+                        {/* Development */}
                         <li className='nav__tab'>
-                            <NavLink to="/projects">Projects</NavLink>
+                            <NavLink to="/development">Development</NavLink>
+                        </li>
+                        
+                        {/* Design */}
+                        <li className='nav__tab'>
+                            <NavLink to="/design">Design</NavLink>
                         </li>
 
                         {/* Blog */}

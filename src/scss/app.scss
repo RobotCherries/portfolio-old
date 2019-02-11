@@ -127,7 +127,7 @@ section { padding: 125px 0; }
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 
 	font-size: 18px;
 	color: $white;
@@ -226,7 +226,18 @@ section { padding: 125px 0; }
     .heading__text {
       color: #ffffffcc;      
     }
-  }
+	}
+	
+	&--left {
+		text-align: left;
+		max-width: 100%;
+		padding: 0 5px;
+
+		.heading__title { 
+			font-size: 35px;
+			margin-bottom: 15px;
+		}
+	}
 }
 /*-----------------------------------------------------*/
 

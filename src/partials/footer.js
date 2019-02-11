@@ -32,7 +32,7 @@ class Footer extends Component {
                                 <Link to={'/about'}>About</Link>
                             </li>
                             <li className="footer__navigation-li">
-                                <Link to={'/projects'}>Projects</Link>
+                                <Link to={'/design'}>Design</Link>
                             </li>
                             <li className="footer__navigation-li">
                                 <Link to={'/blog'}>Blog</Link>

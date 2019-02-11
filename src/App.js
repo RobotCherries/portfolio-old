@@ -4,9 +4,10 @@ import { Route, BrowserRouter } from 'react-router-dom';
 // Pages
 import Home from './pages/home/index';
 import About from './pages/about/index';
-import Projects from './pages/projects/index';
+import Design from './pages/design/index';
 import Blog from './pages/blog/index';
 import Contact from './pages/contact/index';
+import Development from './pages/development';
 
 // Resources
 import './scss/app.scss';
@@ -25,7 +26,8 @@ class App extends Component {
             <main className='main'>
               <Route path='/' exact component={Home}/>
               <Route path='/about' component={About}/>
-              <Route path='/projects' component={Projects}/>
+              <Route path='/development' component={Development}/>
+              <Route path='/design' component={Design}/>
               <Route path='/blog' component={Blog}/>
               <Route path='/contact' component={Contact}/>
             </main>

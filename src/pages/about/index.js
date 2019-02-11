@@ -4,6 +4,10 @@ import React, { Component } from 'react';
 import Contact from '../../partials/contact';
 
 class About extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div className='main__about'>
@@ -17,7 +21,7 @@ class About extends Component {
                             Orignally, I started out on a path to become a designer, went to an arts highschool where I studied graphics and illustration.
                             However, I've always had a knack for computers ever since I've received my first one at 6 years of age.
                             <br/><br/>
-                            Growing up I've spent a lot of time at the computer and on the internet which led me to learning a wide arrray of skills. Amongst, some of the relevant ones would be the following: <br/><br/>
+                            Growing up I've spent a lot of time at the computer and on the internet which led me to learning a wide arrray of skills. Amongst, some of the relevant ones would be the following: <br/>
                             Speak and write English at a high level; 
                             Install, configure, troubleshoot all kinds of operating systems and use their terminals; Understand computer parts, the ways to combine them, build PCs and troubleshoot the hardware at a basic level. <br/><br/>
                             And of course, learning to code from all kinds of <acronym title='Massive Open Online Course'>MOOCs</acronym> (Lynda, Udemy, EggHead, Scrimba etc.), some of the more immersive resources being FreeCodeCamp, Udacity and The Odin Project. <br/>
