@@ -342,7 +342,7 @@ DIALOG p { margin:0 0 30px; color:#676767; font-weight:300; }
   &__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 15%;
+    column-gap: 10%;
   }
 
 	&__title {

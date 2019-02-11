@@ -18,7 +18,7 @@ class Work extends Component {
                 <div className="work__container container">
                     {/* Heading */}
                     <div className="work__heading">
-                        <h1 className='work__title'>Check out what I Built:</h1>
+                        <h1 className='work__title'>Check out what I've Built:</h1>
                         <p className='work__subtitle'>Here you can see some websites that I've built myself or helped build for our clients.</p>
                     </div>
                     
