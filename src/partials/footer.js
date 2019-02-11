@@ -14,7 +14,7 @@ class Footer extends Component {
                             I'd describe myself as a web development/design enthusiast <br/> 
                             and massive autodidact.
                             <br/><br/>
-                            I love learning, reading, painting (traditional & digital), computers , building things and impoving myself.
+                            I love learning, reading, painting (traditional & digital), computers, building things and improving myself.
                             <br/><br/>
                             Head to the contact page and tell me something about yourself. 😊👋
                         </p>
