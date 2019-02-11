@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// Components
+import Form from './components/form';
+
 class Contact extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -12,6 +15,8 @@ class Contact extends Component {
                     <h1 className="heading__title">Contact</h1>
                     <p className="heading__text">Reach me through email.</p>
                 </div>
+
+                <Form />
             </div>
         );
     }
