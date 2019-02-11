@@ -362,7 +362,7 @@ section { padding: 125px 0; }
     &-li {
       font-size: 20px;
       line-height: 35px;
-
+      
       &:hover {
         a { padding-bottom: 2px; border-bottom: 2px solid $primary; }
       }
@@ -373,6 +373,9 @@ section { padding: 125px 0; }
   &__social {
     &-li {
       margin-bottom: 30px;
+      
+      a { transition: all 0.3s; }
+      a:hover { opacity: 0.5; }
     }
   }
 }
