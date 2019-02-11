@@ -13,6 +13,7 @@ import './scss/app.scss';
 
 // Partials
 import Header from './partials/header';
+import Footer from './partials/footer';
 
 class App extends Component {
   render() {
@@ -29,9 +30,7 @@ class App extends Component {
               <Route path='/contact' component={Contact}/>
             </main>
 
-          <footer>
-            Your copyright message.
-          </footer>
+            <Footer/>
         </div>
       </BrowserRouter>
     );

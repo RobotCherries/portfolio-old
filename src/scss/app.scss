@@ -5,11 +5,11 @@
 /*-----------------------------------------------------*/
 /* ----- General
 /*-----------------------------------------------------*/
-.app { text-align:center; }  
+.app { text-align:left; }  
 * { margin:0; padding:0; font-family: $fontInconsolata; font-weight:400; }
 *, *::after, *::before { box-sizing:border-box; }
 body { color:#3e454c; background-color:#fefefe; }
-h1, h2, h3, h4, h5, pre { color:#000; }
+h1, h2, h3, h4, h5, pre { color:#000; margin-bottom: 20px; }
 h1 { font-size:20px; }
 h1 span { font-weight:300; }
 b, strong { font-weight:600; }
@@ -293,7 +293,6 @@ DIALOG p { margin:0 0 30px; color:#676767; font-weight:300; }
 
 		// Slide info card
 		&-info {
-			text-align: left;
 			background-color: #00aeff;
 			position: relative;
 			right: 80%;
@@ -329,6 +328,51 @@ DIALOG p { margin:0 0 30px; color:#676767; font-weight:300; }
 .contact {
   padding: 125px 0 135px;
   background-color: $primary;
+  text-align: center;
+}
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Footer
+/*-----------------------------------------------------*/
+.footer {
+  padding: 125px 0 135px;
+  
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15%;
+  }
+
+	&__title {
+    font-size: 20px;
+		margin-bottom: 30px;
+  }
+  
+	&__text {
+    color: #888;
+    line-height: 26px;
+  }
+  
+  // Navigation list
+  &__navigation {
+    &-li {
+      font-size: 20px;
+      line-height: 35px;
+
+      &:hover {
+        a { padding-bottom: 2px; border-bottom: 2px solid $primary; }
+      }
+    }
+  }
+
+  // Social media list
+  &__social {
+    &-li {
+      margin-bottom: 30px;
+    }
+  }
 }
 /*-----------------------------------------------------*/
 

@@ -86,7 +86,6 @@
 	&-card {
 		display: flex;
 		align-items: center;
-		text-align: left;
 		padding: 40px 15px;
 
 		&__image {
@@ -120,6 +119,7 @@
 /*-----------------------------------------------------*/
 .quote {
 	padding: 300px 0;
+	text-align: center;
 
 	&__content {
 		// Layout
@@ -132,7 +132,6 @@
 		font-size: 18px;
 		font-family: $fontMeslo;
 		line-height: 30px;
-		text-align: center;
 		position: relative;
 
 		&:before {
@@ -196,7 +195,6 @@
 		color: $white;
 		font-family: $fontInconsolata;
 		font-weight: 400;
-		text-align: left;
 		margin-right: 60px;
 	}
 
@@ -218,12 +216,12 @@
 /* ----- Gallery component
 /*-----------------------------------------------------*/
 .gallery {
-	padding: 125px 0;
+	padding: 145px 0;
+	text-align: center;
 
 	&__list {
 		padding: 60px 20px;
 		display: grid;
-		grid-auto-flow: row;
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 30px;
 	}
