@@ -14,6 +14,7 @@ h1 { font-size:20px; }
 h1 span { font-weight:300; }
 b, strong { font-weight:600; }
 a { color:$primaryLink; text-decoration:none; }
+a.disabled { pointer-events: none; cursor: default; }
 a:hover { text-decoration:none !important; }
 ul { list-style-type:none; margin: 0; }
 iframe { display:block; width:100%; border:1px solid #EEE; background-color:#FFF; }
@@ -140,7 +141,7 @@ section { padding: 125px 0; }
 		display: inline;
 		position: relative;
 		color: #000c;
-		margin-right: 20px;
+		margin-right: 40px;
 
 		&--last {
 			margin: 0;
