@@ -12,9 +12,9 @@ import Development from './pages/development';
 // Resources
 import './scss/app.scss';
 
-// Partials
-import Header from './partials/header';
-import Footer from './partials/footer';
+// Commons
+import Header from './commons/header';
+import Footer from './commons/footer';
 
 class App extends Component {
   render() {

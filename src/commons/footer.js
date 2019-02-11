@@ -32,6 +32,9 @@ class Footer extends Component {
                                 <Link to={'/about'}>About</Link>
                             </li>
                             <li className="footer__navigation-li">
+                                <Link to={'/development'}>Web Development</Link>
+                            </li>
+                            <li className="footer__navigation-li">
                                 <Link to={'/design'}>Design</Link>
                             </li>
                             <li className="footer__navigation-li">
@@ -57,7 +60,7 @@ class Footer extends Component {
                                 </a>
                             </li>
                             <li className="footer__social-li">
-                                <a href="https://github.com/RobotCherries" target="_blank" rel="noopener noreferrer">
+                                <a className='disabled' href="https://github.com/RobotCherries" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-github fa-2x"></i>
                                 </a>
                             </li>

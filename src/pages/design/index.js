@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import DesignGallery from './components/design_gallery';
-import Contact from '../../partials/contact';
+import Contact from '../../commons/contact';
 
 class Design extends Component {
     componentDidMount() {
@@ -11,12 +10,10 @@ class Design extends Component {
     render() {
         return (
             <div className='main__design'>
-                <section>
-                    <div className='heading container'>
-                        <h1 className='heading__title'>Design</h1>
-                        <p className='heading__text'>My personal and client work.</p>
-                    </div>
-                </section>
+                <div className='heading heading--main container'>
+                    <h1 className='heading__title'>Design</h1>
+                    <p className='heading__text'>Personal and client work.</p>
+                </div>
 
                 <DesignGallery />
 

@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+
+/*-----------------------------------------------------*/
+/* ----- Story component
+/*-----------------------------------------------------*/
+.story {
+    // Text
+    color: #666;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    // Positioning
+    position: relative;
+
+    // Spacing
+    padding: 30px 160px 80px;
+    margin-bottom: 180px !important;
+    
+    // Effects
+    border-radius: 40px;
+    box-shadow: 1px 2px 5px #aaa;
+    
+    &:after {
+        content: "";
+        background-image: url(https://www.transparenttextures.com/patterns/lined-paper.png);
+        background-color: #fbc02d0d;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+}
+
+.icon-rotated {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+/*-----------------------------------------------------*/

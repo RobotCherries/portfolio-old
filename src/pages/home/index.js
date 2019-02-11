@@ -4,11 +4,11 @@ import React, { Component } from 'react';
 import Hero from './components/hero';
 import Skills from './components/skills';
 import Quote from './components/quote';
-import Work from './components/work';
 import Gallery from './components/gallery';
 
-// Partials
-import Contact from '../../partials/contact';
+// Commons
+import Work from '../../commons/work';
+import Contact from '../../commons/contact';
 
 class Home extends Component {
     componentDidMount() {

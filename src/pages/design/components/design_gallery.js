@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Gallery from 'react-grid-gallery';
 
 
-class DesignGallery extends React.Component {
+class DesignGallery extends Component {
     constructor(props) {
         super(props);
 
@@ -15,17 +14,7 @@ class DesignGallery extends React.Component {
 
     render() {
         return (
-            <div
-                className='container'
-                style={{
-                    display: 'block',
-                    minHeight: '1px',
-                    width: '100%',
-                    overflow: 'auto',
-                    textAlign: 'left',
-                    backgroundColor: 'transparent',
-                    marginBottom: '300px'
-            }}>
+            <div className='design-gallery container'>
                 <Gallery
                     images={this.state.images}
                     enableImageSelection={false}

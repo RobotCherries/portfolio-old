@@ -27,7 +27,7 @@ class Header extends Component {
 
                         {/* Development */}
                         <li className='nav__tab'>
-                            <NavLink to="/development">Development</NavLink>
+                            <NavLink to="/development">Web Development</NavLink>
                         </li>
                         
                         {/* Design */}

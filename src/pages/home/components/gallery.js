@@ -8,7 +8,7 @@ class Gallery extends Component {
                 <div className='gallery__container container'>
                     <div className='heading'>
                         <h2 className='heading__title'>Take a look at my Design Porfolio as well!</h2>
-                        <p className='heading__text'>Below you can see some of the custom graphic designs I've made, if you want to view more you may click the 'See More' button below which will take you to my portfolio page.</p>
+                        <p className='heading__text'>Below you can see some of the custom graphic designs I've made, if you want to view more you may click the 'See More' button below which will take you to my design portfolio page.</p>
                     </div>
 
                     <ul className='gallery__list'>
