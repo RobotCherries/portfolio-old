@@ -8,7 +8,9 @@ class Skills extends Component {
             
                 {/* Card 1 out of 6 */}
                 <div className='skills-card'>
-                    <div className='skills-card__image'></div>
+                    <div className='skills-card__image'>
+                        <i class="fab fa-html5 fa-2x"></i>
+                    </div>
                     <div className='skills-card__copy'>
                         <h3>HTML</h3>
                         <p>HTML5, Markdown, Pug.</p>
@@ -16,7 +18,9 @@ class Skills extends Component {
                 </div>
                 {/* Card 2 out of 6 */}
                 <div className='skills-card'>
-                    <div className='skills-card__image'></div>
+                    <div className='skills-card__image'>
+                    <i class="fab fa-css3-alt fa-2x"></i>
+                    </div>
                     <div className='skills-card__copy'>
                         <h3>CSS</h3>
                         <p>CSS3, SCSS, Bootstrap.</p>
@@ -24,7 +28,9 @@ class Skills extends Component {
                 </div>
                 {/* Card 3 out of 6 */}
                 <div className='skills-card'>
-                    <div className='skills-card__image'></div>
+                    <div className='skills-card__image'>
+                    <i class="fab fa-js fa-2x"></i>
+                    </div>
                     <div className='skills-card__copy'>
                         <h3>JavaScript</h3>
                         <p>jQuery, React js, Node js</p>
@@ -32,7 +38,9 @@ class Skills extends Component {
                 </div>
                 {/* Card 4 out of 6 */}
                 <div className='skills-card'>
-                    <div className='skills-card__image'></div>
+                    <div className='skills-card__image'>
+                        <i class="fab fa-laravel fa-2x"></i>
+                    </div>
                     <div className='skills-card__copy'>
                     <h3>Laravel</h3>
                         <p>MVC, CRUD, REST.</p>
@@ -40,15 +48,19 @@ class Skills extends Component {
                 </div>
                 {/* Card 5 out of 6 */}
                 <div className='skills-card'>
-                    <div className='skills-card__image'></div>
+                    <div className='skills-card__image'>
+                        <i class="fab fa-adobe fa-2x"></i>
+                    </div>
                     <div className='skills-card__copy'>
-                        <h3>Web, graphic design</h3>
+                        <h3>Web Design</h3>
                         <p>Illustrator, Photoshop, Sai.</p>
                     </div>
                 </div>
                 {/* Card 6 out of 6 */}
                 <div className='skills-card'>
-                    <div className='skills-card__image'></div>
+                    <div className='skills-card__image'>
+                        <i class="fab fa-github fa-2x"></i>
+                    </div>
                     <div className='skills-card__copy'>
                         <h3>Git</h3>
                         <p>Terminal, Github, GitKracken.</p>
