@@ -9,7 +9,7 @@ class Skills extends Component {
                 {/* Card 1 out of 6 */}
                 <div className='skills-card'>
                     <div className='skills-card__image'>
-                        <i class="fab fa-html5 fa-2x"></i>
+                        <i className="fab fa-html5 fa-skill fa-2x"></i>
                     </div>
                     <div className='skills-card__copy'>
                         <h3>HTML</h3>
@@ -19,7 +19,7 @@ class Skills extends Component {
                 {/* Card 2 out of 6 */}
                 <div className='skills-card'>
                     <div className='skills-card__image'>
-                    <i class="fab fa-css3-alt fa-2x"></i>
+                    <i className="fab fa-css3-alt fa-skill fa-2x"></i>
                     </div>
                     <div className='skills-card__copy'>
                         <h3>CSS</h3>
@@ -29,7 +29,7 @@ class Skills extends Component {
                 {/* Card 3 out of 6 */}
                 <div className='skills-card'>
                     <div className='skills-card__image'>
-                    <i class="fab fa-js fa-2x"></i>
+                    <i className="fab fa-js fa-skill fa-2x"></i>
                     </div>
                     <div className='skills-card__copy'>
                         <h3>JavaScript</h3>
@@ -39,7 +39,7 @@ class Skills extends Component {
                 {/* Card 4 out of 6 */}
                 <div className='skills-card'>
                     <div className='skills-card__image'>
-                        <i class="fab fa-laravel fa-2x"></i>
+                        <i className="fab fa-laravel fa-skill fa-2x"></i>
                     </div>
                     <div className='skills-card__copy'>
                     <h3>Laravel</h3>
@@ -49,7 +49,7 @@ class Skills extends Component {
                 {/* Card 5 out of 6 */}
                 <div className='skills-card'>
                     <div className='skills-card__image'>
-                        <i class="fab fa-adobe fa-2x"></i>
+                        <i className="fab fa-adobe fa-skill fa-2x"></i>
                     </div>
                     <div className='skills-card__copy'>
                         <h3>Web Design</h3>
@@ -59,7 +59,7 @@ class Skills extends Component {
                 {/* Card 6 out of 6 */}
                 <div className='skills-card'>
                     <div className='skills-card__image'>
-                        <i class="fab fa-github fa-2x"></i>
+                        <i className="fab fa-github fa-skill fa-2x"></i>
                     </div>
                     <div className='skills-card__copy'>
                         <h3>Git</h3>

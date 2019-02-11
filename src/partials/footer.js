@@ -46,17 +46,17 @@ class Footer extends Component {
                         <ul className='footer__social'>
                             <li className="footer__social-li">
                                 <a href="https://www.freecodecamp.org/robotcherries" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-free-code-camp fa-2x"></i>
+                                    <i className="fab fa-free-code-camp fa-2x"></i>
                                 </a>
                             </li>
                             <li className="footer__social-li">
                                 <a href="https://codepen.io/RobotCherries/" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-codepen fa-2x"></i>
+                                    <i className="fab fa-codepen fa-2x"></i>
                                 </a>
                             </li>
                             <li className="footer__social-li">
                                 <a href="https://github.com/RobotCherries" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github fa-2x"></i>
+                                    <i className="fab fa-github fa-2x"></i>
                                 </a>
                             </li>
                         </ul>
