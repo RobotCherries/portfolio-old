@@ -76,7 +76,7 @@
 /*-----------------------------------------------------*/
 .skills {
 	background-color: $secondary;
-	padding: 62.5px 0;
+	padding: 60px 0 63px;
 
 	.container {
 		display: grid;
@@ -86,7 +86,7 @@
 	&-card {
 		display: flex;
 		align-items: center;
-		padding: 40px 15px;
+		padding: 45px 15px;
 
 		&__image {
 			background-color: $white;
