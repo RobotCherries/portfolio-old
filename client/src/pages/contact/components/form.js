@@ -34,7 +34,7 @@ class ContactForm extends Component{
 
     render(){
         return(
-            <div className="container">
+            <div className="container" style={{marginBottom: '180px'}}>
                 <Col md={{ size: 6, offset: 3 }}>
                     <Form onSubmit={this.handleSubmit}>
                         <FormGroup>
@@ -64,7 +64,7 @@ class ContactForm extends Component{
                             />
                         </FormGroup>
 
-                        <Button>Submit</Button>
+                        <Button color="primary" className='btn btn--lg' style={{ display: 'block', margin: '45px auto 0 auto'}}>Submit</Button>
                     </Form>
                 </Col>
             </div>

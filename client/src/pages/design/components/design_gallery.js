@@ -91,14 +91,14 @@ DesignGallery.defaultProps = {
             thumbnail: 'https://i.imgur.com/BAYFMj9.png',
             thumbnailWidth: 760,
             thumbnailHeight: 500,
-            caption: 'Big Stone Lodge - logo design',
+            caption: 'Bronner Bros - hair producs label design',
         },
         {
             src: 'https://i.imgur.com/P26gG4T.png',
             thumbnail: 'https://i.imgur.com/P26gG4T.png',
             thumbnailWidth: 760,
             thumbnailHeight: 500,
-            caption: 'Big Stone Lodge - logo design',
+            caption: 'Bronner Bros - hair producs label design',
         },
         {
             src: 'https://i.imgur.com/v9cCCMk.png',

@@ -36,7 +36,7 @@ class Header extends Component {
 
                         {/* Blog */}
                         <li className='nav__tab'>
-                            <NavLink to="/blog">Blog</NavLink>
+                            <NavLink className='disabled' to="/blog">Blog</NavLink>
                         </li>
                         
                         {/* Contact */}

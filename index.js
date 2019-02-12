@@ -22,7 +22,7 @@ app.post('/api/form', (req, res) => {
 
         let transporter = nodemailer.createTransport({
             host: 'mail.oanamaria.com',
-            port: 465,
+            port: 587,
             auth: {
                 user: 'contact@oanamaria.com',
                 pass: '8xjUBv96LA3riuY'
@@ -49,7 +49,7 @@ app.post('/api/form', (req, res) => {
     })
 });
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 5001
 
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
