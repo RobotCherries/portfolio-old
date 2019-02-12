@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Components
-import Form from './components/form';
+import ContactForm from './components/form';
 
 class Contact extends Component {
     componentDidMount() {
@@ -16,7 +16,7 @@ class Contact extends Component {
                     <p className="heading__text">Reach me through email.</p>
                 </div>
 
-                <Form />
+                <ContactForm />
             </div>
         );
     }
