@@ -141,6 +141,10 @@ section { padding: 125px 0; }
 		font-weight: 800 !important;
 		text-transform: uppercase;
 
+		&:hover {
+			color: #111;
+		}
+
 		span {
 			font-weight: inherit;
 			color: $primary;
