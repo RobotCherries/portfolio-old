@@ -10,6 +10,7 @@ import Contact from './pages/contact/index';
 import Development from './pages/development';
 
 // Resources
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/app.scss';
 
 // Commons
