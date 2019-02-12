@@ -1,39 +1,25 @@
 
 import React, { Component } from 'react';
 
-
 class Form extends Component {
-    constructor() {
-      super();
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleSubmit(event) {
-      event.preventDefault();
-      const data = new FormData(event.target);
-      
-      fetch('/api/form-submit-url', {
-        method: 'POST',
-        body: data,
-      });
-    }
-  
     render() {
-      return (
-        <form className='container' onSubmit={this.handleSubmit}>
-          <label htmlFor="username">Enter username</label>
-          <input id="username" name="username" type="text" />
-  
-          <label htmlFor="email">Enter your email</label>
-          <input id="email" name="email" type="email" />
-  
-          <label htmlFor="birthdate">Enter your birth date</label>
-          <input id="birthdate" name="birthdate" type="text" />
-  
-          <button>Send data!</button>
-        </form>
-      );
+        return (
+            <div className="container">
+                <form method="POST">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name="name" />
+
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" />
+
+                    <label htmlFor="message">Message</label>
+                    <textarea name="message" rows="3"></textarea>
+
+                    <input type="submit" />
+                </form>
+            </div>
+        );
     }
-  }
+}
 
   export default Form;

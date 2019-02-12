@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import react_logo from '../icons/react_logo.svg';
+
 class Footer extends Component {
     render() {
         return (
@@ -67,6 +69,10 @@ class Footer extends Component {
                         </ul>
                     </li>
                 </ul>
+                <div className="footer__aside container">
+                    <p>Made with</p>
+                    <img className='footer__react-logo' src={react_logo} alt='React.js logo' />
+                </div>
             </footer>
         );
     }

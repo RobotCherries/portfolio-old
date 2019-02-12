@@ -2,8 +2,8 @@
 /* ----- Fonts
 /*-----------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin-ext');
-@font-face { font-family: 'Meslo'; src: url('../fonts/MesloLGM-Bold.ttf') format('truetype'); }
-@font-face { font-family: 'Meslo'; src: url('../fonts/MesloLGM-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Meslo Bold'; src: url('../fonts/MesloLGM-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Meslo'; src: url('../fonts/MesloLGM-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
 /*-----------------------------------------------------*/
 
 
@@ -30,6 +30,7 @@ $secondaryLink: #61dafb;
 
 // Fonts
 $fontInconsolata: 'Inconsolata', 'Courier New', monospace, sans-serif;
+$fontMesloBold: 'Meslo Bold', 'Arial', sans-serif;
 $fontMeslo: 'Meslo', 'Arial', sans-serif;
 
 // Media query utils

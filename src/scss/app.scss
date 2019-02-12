@@ -133,11 +133,17 @@ section { padding: 125px 0; }
 	justify-content: space-between;
 
 	font-size: 18px;
-	color: $white;
 
 	&__logo {
-		animation: app-logo-spin infinite 20s linear;
-		height: 40px;
+		font-family: $fontInconsolata;
+		font-size: 32px;
+		font-weight: 800 !important;
+		text-transform: uppercase;
+
+		span {
+			font-weight: inherit;
+			color: $primary;
+		}
 	}
 
 	&__tab {
@@ -173,15 +179,7 @@ section { padding: 125px 0; }
 		}
 	}
 }
-// Animations
-@keyframes app-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
+
 /*-----------------------------------------------------*/
 
 
@@ -397,7 +395,37 @@ section { padding: 125px 0; }
       a { transition: all 0.3s; }
       a:hover { opacity: 0.5; }
     }
-  }
+	}
+	
+	// Aside
+	&__aside {
+		margin-top: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		p {
+			font-size: 20px;
+			margin-right: 10px;
+			margin-bottom: 1.5px;
+			color: #999;
+		}
+	}
+	
+	&__react-logo {
+		height: 40px;
+		animation: app-logo-spin infinite 20s linear;
+	}
+}
+
+// Animations
+@keyframes app-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 /*-----------------------------------------------------*/
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-// Resources
-import logo from '../icons/logo.svg';
+// Commons
 import NavLink from "./nav_link";
 
 class Header extends Component {
@@ -11,7 +10,7 @@ class Header extends Component {
                 {/* Navigation */}
                 <nav className='nav container'>
                     {/* Logo */}
-                    <img className='nav__logo' src={logo} alt='logo' />
+                    <div className="nav__logo">Oana<span>Maria</span></div>
 
                     {/* Tabs */}
                     <ul className='nav__tabs'>
