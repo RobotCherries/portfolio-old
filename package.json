@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://robotcherries.github.io/portfolio",
+  "homepage": "http://robotcherries.github.io/portfolio/",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.13",
     "bootstrap": "^4.3.0",

@@ -135,6 +135,7 @@ section { padding: 125px 0; }
 	font-size: 18px;
 
 	&__logo {
+		color: #333;
 		font-family: $fontInconsolata;
 		font-size: 32px;
 		font-weight: 800 !important;
@@ -149,7 +150,6 @@ section { padding: 125px 0; }
 	&__tab {
 		display: inline;
 		position: relative;
-		color: #000c;
 		margin-right: 40px;
 
 		&--last {
@@ -158,8 +158,12 @@ section { padding: 125px 0; }
 	}
 
 	&__link {
-		color: #000c;
+		color: hsla(0, 0%, 0%, 0.7);
 		padding: 25px 0;
+
+		&:hover {
+			color: hsla(0, 0%, 0%, 0.7);
+		}
 
 		&--active {
 			color: #000;

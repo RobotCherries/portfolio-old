@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { UncontrolledTooltip } from 'reactstrap';
 
 // Commons
@@ -11,7 +12,7 @@ class Header extends Component {
                 {/* Navigation */}
                 <nav className='nav container'>
                     {/* Logo */}
-                    <div className="nav__logo">Oana<span>Maria</span></div>
+                    <Link to={'/'} className="nav__logo">Oana<span>Maria</span></Link>
 
                     {/* Tabs */}
                     <ul className='nav__tabs'>
