@@ -22,7 +22,7 @@ app.post('/api/form', (req, res) => {
 
         let transporter = nodemailer.createTransport({
             host: 'mail.oanamaria.com',
-            port: 587,
+            port: 465,
             auth: {
                 user: 'contact@oanamaria.com',
                 pass: '8xjUBv96LA3riuY'
