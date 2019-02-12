@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
+const parth = require('path')
 const app = express()
 
 app.use(bodyParser.json())
@@ -21,7 +22,7 @@ app.post('/api/form', (req, res) => {
         `
 
         let transporter = nodemailer.createTransport({
-            host: 'mail.oanamaria.com',
+            host: 'smtp.gmail.com',
             port: 587,
             auth: {
                 user: 'contact@oanamaria.com',
@@ -48,6 +49,16 @@ app.post('/api/form', (req, res) => {
         })
     })
 });
+
+
+if (process.env.NODE_ENV === 'production') {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, 'client/build')));
+  // Handle React routing, return all requests to React app
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
 
 const PORT = process.env.PORT || 5001
 
