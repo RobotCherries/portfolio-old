@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { UncontrolledTooltip } from 'reactstrap';
 
 // Commons
 import NavLink from "./nav_link";
@@ -35,8 +36,9 @@ class Header extends Component {
                         </li>
 
                         {/* Blog */}
-                        <li className='nav__tab'>
-                            <NavLink to="/blog">Blog</NavLink>
+                        <li className='nav__tab' id='js-tooltip'>
+                            <NavLink className='disabled' to="/blog">Blog</NavLink>
+                            <UncontrolledTooltip placement="bottom" target="js-tooltip">Coming soon!</UncontrolledTooltip>
                         </li>
                         
                         {/* Contact */}
