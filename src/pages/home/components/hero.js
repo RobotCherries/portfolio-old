@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Hero extends Component {
     render() {
@@ -7,7 +8,7 @@ class Hero extends Component {
                 <h1 className='hero__title'>
                     var Oana = ["Web Developer", "Graphic Designer"];
                 </h1>
-                <a className='hero__btn' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>Learn React</a>
+                <Link className='hero__btn' to={'/development'}>View my work</Link>
             </div>
         );
     }

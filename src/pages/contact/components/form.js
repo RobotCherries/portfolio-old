@@ -5,7 +5,7 @@ import { Row, Col, Form, FormGroup, FormFeedback, Input, Label, Button } from 'r
 class ContactForm extends Component {
     render() {
         return (
-            <div className='container' style={{ marginBottom: '125px', width: '600px' }}>
+            <div className='container' style={{ marginBottom: '180px', width: '600px' }}>
                 <Form  action='https://formspree.io/sd.oana123@gmail.com' method='POST'>
                     <FormGroup>
                         <Label for='name'>Name</Label>

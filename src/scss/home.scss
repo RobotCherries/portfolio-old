@@ -78,11 +78,6 @@
 	background-color: $secondary;
 	padding: 60px 0 63px;
 
-	.container {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-
 	&-card {
 		display: flex;
 		align-items: center;
@@ -114,6 +109,20 @@
 			}
 		}
 	}
+	
+	// Media queries
+	@media screen and (min-width: $mobile) {
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media screen and (min-width: $smDesktop) {
+		.container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 }
 /*-----------------------------------------------------*/
 
@@ -133,7 +142,7 @@
 		margin-bottom: 7px;
 		// Text
 		color: $primaryText;
-		font-size: 18px;
+		font-size: 17px;
 		font-family: $fontMeslo;
 		line-height: 30px;
 		position: relative;
@@ -230,9 +239,18 @@
 
 	&__list {
 		padding: 60px 20px;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		column-gap: 30px;
+
+		// Media queries
+		@media screen and (max-width: $mobile) {
+			display: grid;
+			grid-template-rows: 3;
+			row-gap: 30px;
+		}
+		@media screen and (min-width: $mobile) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 30px;
+		}
 	}
 
 	&__li {

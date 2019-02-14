@@ -217,8 +217,15 @@ section { padding: 125px 0; }
 
 	&__title {
 		font-family: $fontInconsolata;
-		font-size: 40px;
 		margin-bottom: 30px;
+		
+		// Media queries
+		@media screen and (max-width: $mobile) {
+			font-size: 30px;
+		}
+		@media screen and (min-width: $mobile) {
+			font-size: 40px;
+		}
 	}
 
 	&__text {
@@ -285,7 +292,10 @@ section { padding: 125px 0; }
 			cursor: pointer;
 			border: 0 solid black;
 			border-radius: 20px;
-			outline: none;
+			
+			&:hover, &:focus {
+				outline: none;
+			}
 
 			&--active {
 				background: transparent !important;
