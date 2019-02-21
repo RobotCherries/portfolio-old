@@ -1,0 +1,4 @@
+# Redirect default Netlify subdomain to primary domain
+http://oanamaria.com/* http://www.oanamaria.com/:splat 301!
+http://oanamaria.netlify.com/* http://www.oanamaria.com/:splat 301!
+https://oanamaria.netlify.com/* https://www.oanamaria.com/:splat 301!
