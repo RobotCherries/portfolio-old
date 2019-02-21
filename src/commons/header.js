@@ -43,7 +43,7 @@ class Header extends Component {
                         </li>
                         
                         {/* Contact */}
-                        <li className='nav__tab nav__tab nav__tab--last btn'>
+                        <li className='nav__tab nav__tab nav__tab--last btn btn--primary'>
                             <NavLink to='/contact'>Contact</NavLink>
                         </li>
                     </ul>

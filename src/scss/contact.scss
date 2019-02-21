@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+
+/*-----------------------------------------------------*/
+/* ----- Contact
+/*-----------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+/* ----- Form
+/*-----------------------------------------------------*/
+.contact__form {
+    // border-top: 2px solid rgba($primary, 0.2);
+    padding: 20px 0;
+    position: relative;
+    
+    .container {
+        max-width: 600px;
+    }
+    
+    &:after {
+        content: '';
+        display: block;
+        height: 200px;
+        width: 100%;
+        margin-top: 150px;
+        background-color: $primary;
+    }
+}
+
+.form {
+    &__group {
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__checkbox {
+        background-color: #eceff1;
+        display: inline-block;
+        padding: 10px 10px 10px 35px;
+        border-radius: 5px;
+    }
+
+    &__submit {
+        display: block !important;
+        margin: 35px auto 0;
+    }
+}
+/*-----------------------------------------------------*/

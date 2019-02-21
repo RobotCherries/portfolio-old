@@ -6,8 +6,8 @@ class DevGallery extends Component {
             <div className='dev-gallery'>
                 <div className='dev-gallery__container container'>
                     <div className='heading'>
-                        <h2 className='heading__title'>Work & Play Projects</h2>
-                        <p className='heading__text'>Below you can see some of the projects I worked on for fun, learning or for work.</p>
+                        <h2 className='heading__title'>Work & Play</h2>
+                        <p className='heading__text'>Some of the projects I worked on either for work, learning or simply fun.</p>
                     </div>
 
                     <ul className='dev-gallery__list'>
