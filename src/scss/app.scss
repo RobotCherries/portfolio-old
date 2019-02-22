@@ -168,6 +168,20 @@ section { padding: 125px 0; }
 		&:hover {
 			color: hsla(0, 0%, 0%, 0.7);
 		}
+		
+		&--active {
+			color: #000;
+
+			&:after {
+				content: '';
+				position: absolute;
+				right: 0;
+				left: 0;
+				height: 2px;
+				background: #3369e7;
+				margin: 0 auto;
+			}
+		}
 	}
 
 	// Media queries
@@ -211,6 +225,16 @@ section { padding: 125px 0; }
 			position: relative;
 		}
 
+		// Link
+		&__link {
+			&--active {
+				&:after {
+					bottom: 0;
+					width: 8%;
+				}
+			}
+		}
+
 		// Menu
 		&__menu {
 			display: block;
@@ -230,23 +254,16 @@ section { padding: 125px 0; }
 			margin-right: 20px;
 	
 			&--last {
-				margin: 0;
+				margin: 0 !important;
 			}
+		}
 
+		// Link
+		&__link {
 			&--active {
-				color: #000;
-	
 				&:after {
-					content: '';
-					position: absolute;
 					top: 25px;
-					right: 0;
-					bottom: 0;
-					left: 0;
 					width: 70%;
-					height: 2px;
-					background: #3369e7;
-					margin: 0 auto;
 				}
 			}
 		}
