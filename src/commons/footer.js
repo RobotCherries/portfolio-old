@@ -13,14 +13,14 @@ class Footer extends Component {
 
                         <p className='footer__text'>
                             Hi, I'm Oana. <br/>
-                            I'd describe myself as a web development/design enthusiast <br/> 
-                            and massive autodidact.
+                            I am a web development and design enthusiast
+                            also a massive autodidact.
                             <br/><br/>
                             I love learning, reading, painting (traditional & digital), computers, building things and improving myself.
                             <br/><br/>
-                            Head to the contact page and tell me something about yourself. 
-                            <span style={{ fontSize: '20px' }} role='img' aria-label='Smiling face with smiling eyes'>😊</span>
-                            <span role='img' aria-label='Waving hand'>👋</span>
+                            If you wish, head over to the contact page and tell me something about yourself. 
+                            <span style={{ fontSize: '18px' }} role='img' aria-label='Smiling face with smiling eyes'>😊</span>
+                            <span style={{ fontSize: '18px' }} role='img' aria-label='Waving hand'>👋</span>
                         </p>
                     </li>
                     <li className="footer__col">

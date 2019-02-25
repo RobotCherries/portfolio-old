@@ -9,13 +9,13 @@ class Story extends Component {
         return (
             <div className='story container'>
                 <p>
-                    Hello, <span style={{ fontSize: '20px' }} role='img' aria-label='Waving hand'>👋</span> I'm Oana a self taught web developer and designer from romania.
+                    Hello, <span style={{ fontSize: '20px' }} role='img' aria-label='Waving hand'>👋</span> I'm Oana a self taught web developer and designer from Romania.
                     <br/><br/><br/>
-                    Orignally, I started out on a path to become a designer, went to an arts highschool where I studied graphics and illustration.
-                    However, I've always had a knack for computers ever since I've received my first one at 6 years of age.
+                    Orignally, I started out on a path to become a designer and studied graphics and illustration,
+                    however, I've always had a knack for computers ever since I've received my first one at the age of 6.
                     <br/><br/>
-                    Growing up I've spent a lot of time at the computer and on the internet which led me to learning a wide arrray of skills. Amongst, some of the relevant ones would be the following: <br/>
-                    Speak and write English at a high level; 
+                    Growing up I've spent a lot of time around computers and the internet which led me to learning a wide arrray of skills. Amongst, some of the relevant ones would be the following: <br/>
+                    First off all, speaking and writing English at a high level; 
                     Install, configure, troubleshoot all kinds of operating systems and use their terminals; Understand computer parts, the ways to combine them, build PCs and troubleshoot the hardware at a basic level. <br/><br/>
                     And of course, learning to code from all kinds of <acronym title='Massive Open Online Course'>MOOCs</acronym> (Lynda, Udemy, EggHead, Scrimba etc.), some of the more immersive resources being FreeCodeCamp, Udacity and The Odin Project. <br/>
                     I've started by learning JavaScript on Khan Academy and the rest is a long journey.
