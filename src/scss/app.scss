@@ -361,10 +361,6 @@ section { padding: 125px 0; }
 /* ----- Slider block
 /*-----------------------------------------------------*/
 .slider {
-	width: 100%;
-	max-width: 555px;
-	height: 600px;
-
 	// Controls
 	&__controls {
 
@@ -498,6 +494,9 @@ section { padding: 125px 0; }
 
 	@media screen and (min-width: $mobile) {
 		&__slides {
+			max-width: 555px;
+			height: 600px;		
+
 			// Slide info card
 			&-info {
 				right: 80%;
@@ -508,6 +507,41 @@ section { padding: 125px 0; }
 
 			&-title {
 				font-size: 30px;
+			}
+		}
+	}
+
+	@media screen and (min-width: $mobile) and (max-width: $tablet) {
+		&__slides {
+			max-width: 335px;
+			height: 460px;
+
+			// Slide info card
+			&-li {
+				width: 100%;
+				height: 100%;
+				float: left;
+				margin-right: -100%;
+				border-radius: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: top;
+				transition: all 1.5s ease-in-out;
+			}
+
+			&-info {
+				top: 18%;
+				right: 72%;
+				padding: 15px 20px;
+				height: 160px;
+				min-width: 380px;
+			}
+
+			&-title {
+				font-size: 28px;
 			}
 		}
 	}

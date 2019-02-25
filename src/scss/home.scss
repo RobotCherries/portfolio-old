@@ -295,6 +295,8 @@
 
 	// Media Queries
 	@media screen and (max-width: 767px) {
+		padding: 125px 0 325px;
+		
 		&__heading {
 			margin-bottom: 60px;
 		}
@@ -309,26 +311,36 @@
 		}
 	}
 
-	@media screen and (max-width: 767px) {
-		padding: 125px 0 325px;
-	}
-
 	@media screen and (min-width: $mobile) {
 		padding: 125px 0;
 
 		&__container {
 			display: grid;
-			grid-template-columns: 60% 40%;
-		}
-
-		&__heading {
-			margin-right: 60px;
+			grid-template-columns: 52% 40%;
+			grid-column-gap: 8%;
 		}
 
 		&__title {
 			color: inherit;
 			font-size: 40px;
 			margin-bottom: 30px;
+		}
+	}
+
+	@media screen and (min-width: $mobile) and (max-width: $tablet) {
+		&__container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: 30px;
+		}
+
+		&__title {
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
 		}
 	}
 }
