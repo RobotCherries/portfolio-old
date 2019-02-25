@@ -9,7 +9,6 @@ class Story extends Component {
         return (
             <div className='story container'>
                 <p>
-                    <br/><br/>
                     Hello, <span style={{ fontSize: '20px' }} role='img' aria-label='Waving hand'>👋</span> I'm Oana a self taught web developer and designer from romania.
                     <br/><br/><br/>
                     Orignally, I started out on a path to become a designer, went to an arts highschool where I studied graphics and illustration.

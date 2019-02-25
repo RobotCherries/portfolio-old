@@ -15,7 +15,6 @@
     position: relative;
 
     // Spacing
-    padding: 30px 160px 80px;
     margin-bottom: 180px !important;
     
     // Effects
@@ -33,9 +32,20 @@
         right: 0;
         position: absolute;
         z-index: -1;   
-      }
+    }
+    
+    // Media Queries
+	@media screen and (max-width: 767px) {
+        padding: 40px 20px !important;
+        width: 90%;
+	}
+    
+	@media screen and (min-width: $mobile) {
+        padding: 30px 160px 80px;
+    }
 }
 
+// Other
 .icon-rotated {
     display: inline-block;
     transform: rotate(-45deg);

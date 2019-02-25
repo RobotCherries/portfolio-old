@@ -367,8 +367,6 @@ section { padding: 125px 0; }
 
 	// Controls
 	&__controls {
-		position: relative;
-		float: right;
 
 		&-li {
 			display: inline-block;
@@ -398,8 +396,7 @@ section { padding: 125px 0; }
 	// Media Queries
 	@media screen and (max-width: 767px) {
 		&__controls {
-			position: relative;
-			top: -35px;
+			text-align: right;
 			
 			&-btn {
 				height: 20px;
@@ -410,6 +407,8 @@ section { padding: 125px 0; }
 
 	@media screen and (min-width: $mobile) {
 		&__controls {
+			float: right;
+			position: relative;
 			top: -30px;
 			
 			&-btn {
@@ -447,27 +446,69 @@ section { padding: 125px 0; }
 		&-info {
 			background-color: #00aeff;
 			position: relative;
-			right: 80%;
 			border-radius: 10px;
-			padding: 40px 35px;
-			height: 200px;
-			width: 500px;
 			box-shadow: -25px 30px 60px -15px rgba(0, 0, 0, 0.15);
 			transition: transform 1.5s ease-in-out, opacity 0.5s ease-in-out;
 			transition-delay: transform 0.5s;
 		}
-
+		
 		&-title {
 			color: #000;
 			font-family: $fontInconsolata;
 			font-weight: 400;
 			margin: 0 0 20px 0;
-			font-size: 30px;
 		}
 
 		&-text {
 			overflow: hidden;
 			line-height: 24px;
+		}
+	}
+
+	// Media queries
+	@media screen and (max-width: 767px) {
+		&__slides {
+		&-li {
+			width: inherit;
+			height: inherit;
+			float: left;
+			margin-right: -100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top center;
+			transition: all 1.5s ease-in-out;
+			position: relative;
+		}
+
+		// Slide info card
+		&-info {
+				position: absolute;
+				bottom: -165px;
+				padding: 20px;
+				max-height: 165px;
+				width: 100%;
+				margin-bottom: -15px;
+			}
+
+			&-title {
+				font-size: 25px;
+			}
+		}
+	}
+
+	@media screen and (min-width: $mobile) {
+		&__slides {
+			// Slide info card
+			&-info {
+				right: 80%;
+				padding: 40px 35px;
+				height: 200px;
+				width: 500px;
+			}
+
+			&-title {
+				font-size: 30px;
+			}
 		}
 	}
 }
@@ -490,12 +531,6 @@ section { padding: 125px 0; }
 /*-----------------------------------------------------*/
 .footer {
   padding: 125px 0 135px;
-  
-  &__row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10%;
-  }
 
 	&__title {
     font-size: 20px;
@@ -545,6 +580,24 @@ section { padding: 125px 0; }
 	&__react-logo {
 		height: 40px;
 		animation: app-logo-spin infinite 20s linear;
+	}
+
+	// Media Queries
+	@media screen and (max-width: 767px) {
+		text-align: center;
+
+		&__col {
+			margin-bottom: 60px;
+			padding: 0 20px;
+		}
+	}
+
+	@media screen and (min-width: $mobile) {
+		&__row {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 10%;
+		}
 	}
 }
 

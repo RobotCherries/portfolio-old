@@ -5,15 +5,11 @@
 /* ----- Gallery component
 /*-----------------------------------------------------*/
 .dev-gallery {
-	padding: 145px 0;
+	padding: 145px 0 180px;
 	text-align: center;
 
 	&__list {
-		padding: 60px 20px;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		column-gap: 90px;
-		row-gap: 100px;
+		padding: 0 20px;
 	}
 
 	&__li {
@@ -32,6 +28,34 @@
 		&:hover {
 			box-shadow: 5px 15px 20px -10px #999;
 			margin-top: -2px;
+		}
+	}
+
+	// Media Queries
+	@media screen and (max-width: 767px) {
+		&__list {
+			display: grid;
+			row-gap: 50px;
+		}
+	}
+
+	@media screen and (min-width: $mobile) {
+		&__list {
+			padding: 0 20px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 90px;
+			row-gap: 100px;
+		}
+	}
+
+	@media screen and (min-width: $mobile) and (max-width: $tablet) {
+		&__list {
+			padding: 0 20px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 50px;
+			row-gap: 80px;
 		}
 	}
 }

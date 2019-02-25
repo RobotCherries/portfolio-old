@@ -237,7 +237,6 @@
 /* ----- Work component
 /*-----------------------------------------------------*/
 .work {
-	padding: 125px 0;
 	background-color: $primaryDark;
 
 	&__heading {
@@ -257,24 +256,27 @@
 
 	// Media Queries
 	@media screen and (max-width: 767px) {
-		text-align: center;
-
 		&__heading {
 			margin-bottom: 60px;
 		}
 
 		&__title {
-			color: inherit;
-			font-size: 40px;
-			margin-bottom: 30px;
+			font-size: 28px;
 		}
 
 		&__subtitle {
-			padding: 0 25px;
+			font-size: 16px;
+			padding-right: 20px;
 		}
 	}
 
+	@media screen and (max-width: 767px) {
+		padding: 125px 0 325px;
+	}
+
 	@media screen and (min-width: $mobile) {
+		padding: 125px 0;
+
 		&__container {
 			display: grid;
 			grid-template-columns: 60% 40%;
