@@ -43,6 +43,11 @@
 	@media screen and (min-width: $mobile) {
         padding: 80px 160px !important;
     }
+    
+    @media screen and (max-width: $tablet) {
+        padding: 40px 20px !important;
+        width: 95%;
+    }
 }
 
 // Other
