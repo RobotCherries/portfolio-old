@@ -14,7 +14,7 @@ class DevGallery extends Component {
                         <a href="https://www.fotografland.dk/" target="_blank" rel="noopener noreferrer">
                             <li className='dev-gallery__li' style={{ backgroundImage: 'url(https://i.imgur.com/KbSUIGJ.png?2)' }}></li>
                         </a>
-                        <a href="https://inspiring-visvesvaraya-2a03e7.netlify.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://udacity-cat-clicker.netlify.com/" target="_blank" rel="noopener noreferrer">
                             <li className='dev-gallery__li' style={{ backgroundImage: 'url(https://i.imgur.com/HKXSDjy.png)' }}></li>
                         </a>
                         <a href="https://s.codepen.io/RobotCherries/debug/rwQLZZ/yYMyLOKWZank" target="_blank" rel="noopener noreferrer">
