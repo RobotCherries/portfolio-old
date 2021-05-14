@@ -12,7 +12,7 @@ class Design extends Component {
             <div className='main__design'>
                 <div className='heading heading--main container'>
                     <h1 className='heading__title'>Design</h1>
-                    <p className='heading__text'>Personal and client work.</p>
+                    <p className='heading__text'>Personal and client work. View more <a href='https://dribbble.com/oana-maria' target='_blank'>here</a></p>
                 </div>
 
                 <DesignGallery />
